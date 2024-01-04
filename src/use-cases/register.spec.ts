@@ -1,6 +1,4 @@
-import { Prisma } from "@prisma/client";
-import { User } from "@prisma/client";
-import { RegisterUseCase } from "@/services/register";
+import { RegisterUseCase } from "@/use-cases/register";
 import { expect, describe, it } from "vitest";
 import { compare } from "bcryptjs";
 import { InMemoryUsersRepository } from "@/repositories/in-memory/in-memory-users-repository";
