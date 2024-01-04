@@ -4,7 +4,7 @@ Check In style app.
 
 ## Requisitos funcionais
 
-- [ ] Deve ser possivel se cadastrar;
+- [x] Deve ser possivel se cadastrar;
 - [ ] Deve ser possivel se autenticar;
 - [ ] Deve ser possivel obter o perfil de um usuário logado;
 - [ ] Deve ser possivel obter o número de check-ins realizados pelo usuário logado;
@@ -18,16 +18,16 @@ Check In style app.
 
 ## Regras de negócios
 
-- O usuário não deve poder se cadastrar com um e-mail duplicado;
-- O usuário não pode fazer 2 check-ins no mesmo dia;
-- O usuário não pode fazer check-in se não estiver perto(100m) da academia;
-- O check-in só pode ser validado até 20 min após criado;
-- O check-in só pode ser validado por administradores;
-- A academia só pode ser cadastrado por administradores;
+- [x] O usuário não deve poder se cadastrar com um e-mail duplicado;
+- [ ] O usuário não pode fazer 2 check-ins no mesmo dia;
+- [ ] O usuário não pode fazer check-in se não estiver perto(100m) da academia;
+- [ ] O check-in só pode ser validado até 20 min após criado;
+- [ ] O check-in só pode ser validado por administradores;
+- [ ] A academia só pode ser cadastrado por administradores;
 
 ## Rquisitos não-funcionais
 
-- [ ] A senha do usuário precisa estar criptografada;
-- [ ] Os dados da aplicação precisam estar persisitidos em um banco PostgreSQl;
+- [x] A senha do usuário precisa estar criptografada;
+- [x] Os dados da aplicação precisam estar persisitidos em um banco PostgreSQl;
 - [ ] Todas listas de dados precisam estar paginadas com 20 itens por páginas;
 - [ ] O usuário deve ser identificado por um JWT (Json Web Token);
