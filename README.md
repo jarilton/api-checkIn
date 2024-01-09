@@ -6,7 +6,7 @@ Check In style app.
 
 - [x] Deve ser possivel se cadastrar;
 - [x] Deve ser possivel se autenticar;
-- [ ] Deve ser possivel obter o perfil de um usuário logado;
+- [x] Deve ser possivel obter o perfil de um usuário logado;
 - [ ] Deve ser possivel obter o número de check-ins realizados pelo usuário logado;
 - [ ] Deve ser possivel o usuário obter seu histórico de check-ins;
 - [ ] Deve ser possivel o usuário buscar academias próximas;
