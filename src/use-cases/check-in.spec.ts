@@ -38,8 +38,6 @@ describe("Check in use case", () => {
       userLongitude: 0,
     });
 
-    console.log(checkIn.created_at);
-
     expect(checkIn.id).toEqual(expect.any(String));
   });
 
@@ -83,5 +81,25 @@ describe("Check in use case", () => {
     });
 
     expect(checkIn.id).toEqual(expect.any(String));
+  });
+
+  it("should not be able to check in on distant gym", async () => {
+    gymsRepository.items.push({
+      id: "gym-id2",
+      title: "Gym Javascript  ",
+      description: "The best gym to learn Javascript",
+      phone: "123456789",
+      latitude: new Decimal(-21.15762),
+      longitude: new Decimal(-47.7358044),
+    });
+
+    expect(() =>
+      sut.execute({
+        userId: "user-id",
+        gymId: "gym-id2",
+        userLatitude: 0,
+        userLongitude: 0,
+      })
+    ).rejects.toBeInstanceOf(Error);
   });
 });
