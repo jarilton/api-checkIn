@@ -13,7 +13,7 @@ Check In style app.
 - [ ] Deve ser possivel o usuário buscar academias pelo nome;
 - [x] Deve ser possivel o usuário realizar check-in em uma academia;
 - [ ] Deve ser possivel validar o check-in de um usuário;
-- [ ] Deve ser possivel cadastrar uma academia;
+- [x] Deve ser possivel cadastrar uma academia;
 
 ## Regras de negócios
 
