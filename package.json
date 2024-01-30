@@ -15,12 +15,14 @@
     "test:e2e": "vitest run --dir src/http",
     "test:e2e:watch": "vitest --dir src/http",
     "test:coverage": "vitest run --coverage",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "clean": "sudo rm -rf ./node_modules && sudo rm -rf package-lock.json && npm i"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cookie": "9.3.1",
     "@fastify/jwt": "8.0.0",
     "@prisma/client": "5.7.0",
     "bcryptjs": "2.4.3",
