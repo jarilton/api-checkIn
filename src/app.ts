@@ -2,7 +2,11 @@ import fastify from "fastify";
 import { ZodError } from "zod";
 import { env } from "./env";
 import fastifyJwt from "@fastify/jwt";
+<<<<<<< Updated upstream
 import fastifyCookie from "@fastify/cookie";
+=======
+import fastifyJCookie from "@fastify/cookie";
+>>>>>>> Stashed changes
 import { usersRoutes } from "./http/controllers/users/routes";
 import { gymsRoutes } from "./http/controllers/gyms/routes";
 import { checkInsRoutes } from "./http/controllers/check-ins/routes";
@@ -11,16 +15,23 @@ export const app = fastify();
 
 app.register(fastifyJwt, {
   secret: env.JWT_SECRET,
+<<<<<<< Updated upstream
   cookie: {
     cookieName: "refreshToken",
     signed: false,
   },
+=======
+>>>>>>> Stashed changes
   sign: {
     expiresIn: "10m",
   },
 });
 
+<<<<<<< Updated upstream
 app.register(fastifyCookie);
+=======
+app.register(fastifyJCookie);
+>>>>>>> Stashed changes
 
 app.register(usersRoutes);
 app.register(gymsRoutes);
