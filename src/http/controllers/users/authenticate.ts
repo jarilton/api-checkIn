@@ -34,9 +34,13 @@ export async function authenticate(
     );
 
     const refreshToken = await reply.jwtSign(
+<<<<<<< Updated upstream
       {
         role: user.role,
       },
+=======
+      {},
+>>>>>>> Stashed changes
       {
         sign: {
           sub: user.id,
